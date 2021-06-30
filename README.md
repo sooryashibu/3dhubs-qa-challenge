@@ -15,7 +15,7 @@ enter the following command in cmd being located in the folder path
   - --html=reports/report1.html For Pytest html reporting
   - --browser <firefox, chrome> To choose different browser, default is chrome
   
-* Example: python -m pytest --html=reports/report1.html --browser=chrome
+* Example: `python -m pytest --html=reports/report1.html --browser=chrome`
    
 
 # Technologies usedg

@@ -15,9 +15,9 @@ class TestModelUploading:
     types : .x_t, .iges, .stp, .sldprt, .3dm, .igs, .sat, .step
     """
 
-    @pytest.mark.parametrize("path_to_file",[pathdata.STEP_FILE_PATH,pathdata.SAT_FILE_PATH,
-                                             pathdata.X_T_FILE_PATH,pathdata.STP_FILE_PATH,
-                                             pathdata.SLDPRT_FILE_PATH,pathdata.IGS_FILE_PATH, ])
+    @pytest.mark.parametrize("path_to_file", [pathdata.STEP_FILE_PATH, pathdata.SAT_FILE_PATH,
+                                              pathdata.X_T_FILE_PATH, pathdata.STP_FILE_PATH,
+                                              pathdata.SLDPRT_FILE_PATH, pathdata.IGS_FILE_PATH, ])
     def test_step_file_successful_upload(self, path_to_file):
         driver = self.driver
         driver.get(environment.URL_3DS)
